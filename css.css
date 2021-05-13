@@ -102,6 +102,10 @@
     text-decoration: none;
     color: #990000!important
 }
+.social-icons .github {
+    text-decoration: none;
+    color: #313131!important
+}
 
 .social-icons .tiktok {
     border-radius: 71px;

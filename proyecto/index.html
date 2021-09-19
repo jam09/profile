@@ -1,495 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/css.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/hero.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
-    <title>javiertrejo</title>
-    <link rel="stylesheet" type="text/css" href="css/principal.css">
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"
-    ></script>
+  <meta charset="utf-8">
+  <title>Kross | Portfolio Template</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-   
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- bulma -->
+  <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
- <!-- Begin Preloader -->
- <div class="preloader-wrapper">
+
+  <!-- <div class="preloader-wrapper">
     <div class="preloader">
       <img src="4.gif" alt="" />
     </div>
   </div>
+   -->
 
-  <form action="#home">
-    <button id="toTop" title="Go to top">
-      <i class="fas fa-angle-up"></i>
-    </button>
-  </form>
-  <!-- End Preloader-->
-
-
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-        <!-- Begin Hero -->
-        <section class="hero is-large">
-          <!-- Begin Mobile Nav -->
-          <nav class="navbar is-transparent is-hidden-desktop">
-            <!-- Begin Burger Menu -->
-          
-            <!-- End Burger Menu -->
-            <div id="mobile-nav" class="navbar-menu">
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#home">
-                    Home
-                  </a>
-                </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#about-me">
-                    About Me
-                  </a>
-                </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#services">
-                    Services
-                  </a>
-                </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#skills">
-                    Skills
-                  </a>
-                </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#my-work">
-                    My Work
-                  </a>
-                </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#contact">
-                    Contact
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <!-- End Mobile Nav -->
-          <!-- Begin Hero Content-->
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="subtitle">Hola a todos!  Soy </h1>
-              <h2 class="title">Javier Trejo</h2>
-              <h1 class="subtitle profession">A UI/UX Diseñador</h1>
-            </div>
-          </div>
-          <!-- End Hero Content-->
-          <!-- Begin Hero Menu -->
-          <div class="hero-foot ">
-            <div class="hero-foot--wrapper">
-              <div class="columns">
-                <div class="column is-12 hero-menu-desktop has-text-centered">
-                  <ul>
-                    <li class="is-active">
-                      <a href="#home">inicio</a>
-                    </li>
-                    <li>
-                      <a href="#about-me">sobre mi</a>
-                    </li>
-                    <!-- <li>
-                      <a href="#services">Services</a>
-                    </li> -->
-                    <li>
-                      <a href="#skills">Habilidades</a>
-                    </li>
-                    <li>
-                      <a href="#my-work">Mis trabajos</a>
-                    </li>
-                    <!-- <li>
-                      <a href="#contact">Contact</a>
-                    </li> -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Hero Menu -->
-        </section>
-        <!-- End Hero -->
+<!-- <header>
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="images/logo.png" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navigation" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="about.html" class="navbar-item">About</a>
+        <a href="blog.html" class="navbar-item">blog</a>
+        <a href="portfolio.html" class="navbar-item">portfolio</a>
+        <a href="contact.html" class="navbar-item">contact</a>
       </div>
-      <!-- End Header -->
-  
-      <!-- Begin Main Content -->
-      <div class="main-content">
-        <!-- Begin About Me Section -->
-        <div class="section-light about-me" id="about-me">
-          <div class="container">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">sobre de mi </h1>
-            </div>
-            <div class="columns is-multiline">
-              <div
-                class="column is-6 has-vertically-aligned-content"
-                data-aos="fade-right"
-              >
-                <p class="is-larger">
-                  &emsp;&emsp;<strong
-                    >Showcase is a modern, beautiful personal website template to
-                    showcase who you are, as well as projects you've worked on in
-                    the past.</strong
-                  >
-                </p>
-                <br />
-                <p>
-                  Showcase was built from the ground up with Bulma to be fast and
-                  responsive out of the box with all source files well documented
-                  for easy to customization. The Showcase template gives you a
-                  personal space to share what you are all about as a creative
-                  designer, developer, photographer, and more!
-                </p>
-                <br />
-                <div class="is-divider"></div>
-                <div class="columns about-links">
-                    <div class="column">
-                        <p class="heading">
-                            <strong>Instagram</strong>
-                            <a class="fab fa-instagram"  href="https://www.instagram.com/jarvan.trejo/"><em class="fa fa-instagram"></em></a>  
-               
-                          </p>
-                              </div>
-                    
-                    <div class="column">
-                        <p class="heading">
-                            <strong>Youtube</strong>
-                            <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCQFC4TI6CvkHlNyRJVDyVWg"><em class="fa fa-youtube"></em></a>
-                     
-                          </p>
-                            </div>
-                        <div class="column">
-                            <p class="heading">
-                                <strong>Github</strong>
-                                <a class="fab fa-github" href="https://github.com/jam09"><em class="fa fa-github"></em></a>
-                        
-                              </p>
-                                 </div>
-                   
-                </div>
-                
-                <!-- <div class="columns about-links">
-                  <div class="column">
-                    <p class="heading">
-                      <strong>Give me a ring</strong>
-                    </p>
-                    <p class="subheading">
-                      123-456-7890
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p class="heading">
-                      <strong>Email Me</strong>
-                    </p>
-                    <p class="subheading">
-                      hello@example.com
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p class="heading">
-                      <strong>View my portfolio</strong>
-                    </p>
-                    <p class="subheading">
-                      example.com
-                    </p>
-                  </div>
-                </div> -->
-              </div>
-              <div class="column is-6 right-image " data-aos="fade-left">
-                <img
-                  class="is-rounded"
-                  src="https://scontent.fisj1-1.fna.fbcdn.net/v/t1.6435-9/62428842_2391319190911512_3644610742310666240_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xcCsKCTJ6RYAX_feDaj&_nc_ht=scontent.fisj1-1.fna&oh=eac76aea3a193c533ce77a7f8c78fdb6&oe=616B63D8"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End About Me Content -->
-        <!-- <div class="section-dark resume">
-          <div class="container">
-            <div
-              class="columns is-multiline"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <div class="column is-12 about-me">
-                <h1 class="title has-text-centered section-title">
-                  View My Resume
-                </h1>
-              </div>
-              <div class="column is-10 has-text-centered is-offset-1">
-                <h2 class="subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et doloremagna aliqua
-                </h2>
-                <form action="example.docs">
-                  <button class="button">
-                    Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- Begin Services Content -->
-        <!-- <div class="section-color services" id="services">
-          <div class="container">
-            <div class="columns is-multiline">
-              <div
-                class="column is-12 about-me"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <h1 class="title has-text-centered section-title">Services</h1>
-  
-                <h2 class="subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
-                <br />
-              </div>
-              <div class="columns is-12">
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fad fa-meteor fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fas fa-paint-brush fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fas fa-rocket fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-              </div>
-              <hr />
-              <div class="columns is-12">
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fas fa-upload fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fas fa-bus fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-                <div
-                  class="column is-4 has-text-centered"
-                  data-aos="fade-in"
-                  data-aos-easing="linear"
-                >
-                  <i class="fas fa-code fa-3x"></i>
-                  <hr />
-                  <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- End Services Content -->
-        <!-- Begin Skills Content -->
-        <div class="section-light skills" id="skills">
-          <div class="container">
-            <div class="columns is-multiline">
-              <div class="column is-12 about-me">
-                <h1 class="title has-text-centered section-title">Habilidades</h1>
-              </div>
-              <div
-                class="column is-6"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <h1>Adobe ilustrador</h1>
-                <progress class="progress" value="70" max="100">30%</progress>
-                <h1>Adobe After Effects</h1>
-                <progress class="progress" value="65" max="100">30%</progress>
-                <h1>Visual Studio Code</h1>
-                <progress class="progress" value="58" max="100">45%</progress>
-                <h1>Adobe Photoshop</h1>
-                <progress class="progress" value="90" max="100">60%</progress>
-              </div>
-              <div
-                class="column is-6"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <h1>HTML</h1>
-                <progress class="progress" value="85" max="100">30%</progress>
-                <h1>CSS</h1>
-                <progress class="progress" value="95" max="100">30%</progress>
-                <h1>angular</h1>
-                <progress class="progress" value="70" max="100">45%</progress>
-                <h1>ionic angular</h1>
-                <progress class="progress" value="60" max="100">60%</progress>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Skills Content -->
-        <!-- Begin Work Content -->
+    </div>
+  </nav>
+</header> -->
 
-        
-        <div class="section-dark my-work" id="my-work">
-          <div class="container">
-            <div
-              class="columns is-multiline"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <div class="column is-12">
-                <h1 class="title has-text-centered section-title">Mi trabajos</h1>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=0');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=10');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=20');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=30');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=40');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=50');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=60');"
-                  ></figure>
-                </a>
-              </div>
-              <div class="column is-3">
-                <a href="#">
-                  <figure
-                    class="image is-2by1 work-item"
-                    style="background-image: url('https://picsum.photos/320/180?image=70');"
-                  ></figure>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Work Content -->
-        <!-- Begin Contact Content -->
-    
-        <!-- End Contact Content -->
+<!-- hero area -->
+<section class="hero-area has-background-primary" id="parallax">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-11-desktop is-offset-1-desktop">
+        <h1 class="has-text-white font-tertiary">Hi! I’m <br> Javier trejo<br> UI UX designer</h1>
       </div>
-      <!-- End Main Content -->
-  
-      <!-- Begin Footer -->
-      <!-- Begin Footer -->
- 
-    <!-- End Footer -->
+    </div>
+  </div>
+  <div class="layer-bg is-full">
+    <img class="image is-full" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l3">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l4">
+    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l5">
+    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l6">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l7">
+    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l8">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+  </div>
+  <!-- social icon -->
+  <div class="list list-hero-social">
+    <!-- <a class="list-item has-text-white" href="#"><i class="ti-facebook"></i></a> -->
+    <a class="list-item has-text-white" href="https://www.instagram.com/jarvan.trejo/"><i class="ti-instagram"></i></a>
+    <!-- <a class="list-item has-text-white" href="#"><i class="ti-dribbble"></i></a> -->
+    <a class="list-item has-text-white" href="https://www.youtube.com/channel/UCQFC4TI6CvkHlNyRJVDyVWg"><i class="ti-youtube"></i></a>
+    <a class="list-item has-text-white" href="https://github.com/jam09"><i class="ti-github"></i></a>
+  </div>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/showcase.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-  </body>
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths-desktop has-text-centered">
+        <p class="font-secondary paragraph-lg has-text-dark">I am a software engineering student at the polytechnic university of Quintana Roo. I like to solve problems and design ui u, I always strive to bring 100% to the work I do, I have worked in technology such as angular, angular Ionic , mysql,PostgresSQL, HTML5,CSS,Node js typescript during my degree, I have 19 months of professional work experience that help me to strengthen my experience in node js , angular , angular ionic. I am passionate about developing complex applications that solve real world problems that impact millions of users.</p>
+        <!-- <a href="about.html" class="button is-link">know more</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
 
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>Web Design (90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>Logo Design (60%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>After Effects (80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>App hybrids (70%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#242424">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>Adobe ilustrator(90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#ca00b9">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>Adobe Photoshop(90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#44f9ff">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>Adobe XD(80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3-desktop is-6-tablet">
+        <div class="card shadow has-text-centered">
+          <div class="is-relative rounded-top progress-wrapper" data-color="#ffde4d">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-content has-background-white">
+            <h4>figma(60%)</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <img src="images/experience/icon-1.png" alt="icon">
+        <p class="mb-0">Jan 2019 - Feb 2021</p>
+        <h4>Junior UX Designer</h4>
+        <h6 class="has-text-light">WEBEX</h6>
+      </div>
+      <div class="column has-text-centered">
+        <img src="images/experience/icon-3.png" alt="icon">
+        <p class="mb-0">Mar 2020 - Aug 2021</p>
+        <h4>UX & UI Designer</h4>
+        <h6 class="has-text-light">AUGMEDIX</h6>
+      </div>
+      <!-- <div class="column has-text-centered">
+        <img src="images/experience/icon-3.png" alt="icon">
+        <p class="mb-0">Sep 2014 - Present</p>
+        <h4>Senior UI Designer</h4>
+        <h6 class="has-text-light">THEMEFISHER</h6>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- ./experience -->
+
+<!-- education -->
+<!--  -->
+<!-- /education -->
+
+<!-- services -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column">
+        <div class="card hover-shadow shadow">
+          <div class="card-content has-text-centered">
+            <i class="ti-palette icon mb-10 is-inline-block"></i>
+            <h4 class="mb-20">UI Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card active-bg-primary hover-shadow shadow">
+          <div class="card-content has-text-centered">
+            <i class="ti-vector icon mb-10 is-inline-block"></i>
+            <h4 class="mb-20">UX Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card hover-shadow shadow">
+          <div class="card-content has-text-centered">
+            <i class="ti-panel icon mb-10 is-inline-block"></i>
+            <h4 class="mb-20">Interaction Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /services -->
+
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+    <div class="columns is-multiline shuffle-wrapper">
+      <div class="  column is-4-desktop is-6-tablet mb-20 shuffle-item card ">
+        <div class="is-relative hover-wrapper">
+          <img src="images/portfolio/item-1.png" alt="portfolio-image" class=" image is-full">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="button is-small is-light" href="#">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4-desktop is-6-tablet mb-20 shuffle-item card">
+        <div class="is-relative hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="image is-full">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="button is-small is-light" href="#">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4-desktop is-6-tablet mb-20 shuffle-item card">
+        <div class="is-relative hover-wrapper">
+          <img src="images/portfolio/item-3.png" alt="portfolio-image" class="image is-full">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="button is-small is-light" href="#">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4-desktop is-6-tablet mb-20 shuffle-item card">
+        <div class="is-relative hover-wrapper">
+          <img src="images/portfolio/item-4.png" alt="portfolio-image" class="image is-full">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="button is-small is-light" href="#">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4-desktop is-6-tablet mb-20 shuffle-item card">
+        <div class="is-relative hover-wrapper">
+          <img src="images/portfolio/item-5.png" alt="portfolio-image" class="image is-full">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="button is-small is-light" href="#">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+
+<!-- testimonial -->
+<!--  -->
+<!-- /testimonial -->
+
+<!-- client logo slider -->
+<!-- <section class="section pb-0">
+  <div class="container">
+    <div class="client-logo-slider is-flex align-items-center">
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="has-text-centered is-block outline-0"><img class="d-unset image"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+    </div>
+  </div>
+</section> -->
+<!-- /client logo slider -->
+
+<!-- blog -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Blogs</h2>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-4-desktop is-6-tablet">
+        <article class="card shadow">
+          <figure class="image is-4by3">
+            <img src="images/blog/post-3.jpg" alt="Placeholder image">
+          </figure>
+          <div class="card-content">
+            <h4 class="mb-10"><a class="has-text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="button is-extra-small is-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet">
+        <article class="card shadow">
+          <figure class="image is-4by3">
+            <img src="images/blog/post-4.jpg" alt="Placeholder image">
+          </figure>
+          <div class="card-content">
+            <h4 class="mb-10"><a class="has-text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="button is-extra-small is-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet">
+        <article class="card shadow">
+          <figure class="image is-4by3">
+            <img src="images/blog/post-6.jpg" alt="Placeholder image">
+          </figure>
+          <div class="card-content">
+            <h4 class="mb-10"><a class="has-text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="button is-extra-small is-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /blog -->
+
+<!-- contact -->
+<!-- <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="has-text-centered">
+      <h2 class="section-title">Contact Info</h2>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8-desktop">
+        <div class="has-background-white card-content has-text-centered shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" class="columns is-multiline is-centered">
+            <div class="column is-6-tablet">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="input">
+            </div>
+            <div class="column is-6-tablet">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="input">
+            </div>
+            <div class="column is-full">
+              <textarea name="message" id="message" class="input"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="column is-6-tablet is-10">
+              <button class="button is-primary is-fullwidth">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /contact -->
+
+<!-- footer -->
+<!-- <footer class="has-background-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4-tablet">
+          <h5 class="has-text-light">Email</h5>
+          <p class="has-text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="column is-4-tablet">
+          <h5 class="has-text-light">Phone</h5>
+          <p class="has-text-white paragraph-lg font-secondary">+880 2544 658 256</p>
+        </div>
+        <div class="column is-4-tablet">
+          <h5 class="has-text-light">Address</h5>
+          <p class="has-text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-small has-text-centered has-border-top is-border-dark">
+    <p class="has-text-light">Copyright ©
+      <script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> a theme by <a href="themefisher.com">themefisher.com</a></p>
+  </div>
+</footer> -->
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
 </html>

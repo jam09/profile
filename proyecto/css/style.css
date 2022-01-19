@@ -8,6 +8,15 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+PROJECT:	Project Name
+VERSION:	Versoin Number
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+/*  typography */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400,500,700");
 @font-face {
   font-family: 'BwNistaInt-xBd';
